@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="heguang5460.github.io.message.dao.mapper.LogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="heguang5460.github.io.message.dao.domain.db.Log">
+        <id column="id" property="id" />
+        <result column="scene_id" property="sceneId" />
+        <result column="channel_id" property="channelId" />
+        <result column="gateway_id" property="gatewayId" />
+        <result column="template_id" property="templateId" />
+        <result column="message_content" property="messageContent" />
+        <result column="message_status" property="messageStatus" />
+        <result column="to_be_send_time" property="toBeSendTime" />
+        <result column="sending_time" property="sendingTime" />
+        <result column="sent_time" property="sentTime" />
+        <result column="receive_time" property="receiveTime" />
+        <result column="message_tag" property="messageTag" />
+    </resultMap>
+
+</mapper>

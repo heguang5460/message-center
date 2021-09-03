@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="heguang5460.github.io.message.dao.mapper.GatewayMapper">
+
+  <!-- 通用查询映射结果 -->
+  <resultMap id="BaseResultMap" type="heguang5460.github.io.message.dao.domain.db.Gateway">
+    <id column="id" property="id"/>
+    <result column="channel_id" property="channelId"/>
+    <result column="gateway_code" property="gatewayCode"/>
+    <result column="gateway_account" property="gatewayAccount"/>
+    <result column="gateway_password" property="gatewayPassword"/>
+    <result column="gateway_sign" property="gatewaySign"/>
+    <result column="delete_status" property="deleteStatus"/>
+    <result column="create_time" property="createTime"/>
+    <result column="create_by" property="createBy"/>
+    <result column="update_time" property="updateTime"/>
+    <result column="update_by" property="updateBy"/>
+  </resultMap>
+
+  <!-- 通用查询映射结果 -->
+  <resultMap id="GatewayVo" type="heguang5460.github.io.message.dao.domain.vo.GatewayVo">
+    <id column="id" property="id"/>
+    <result column="channel_code" property="channelCode"/>
+    <result column="gateway_code" property="gatewayCode"/>
+    <result column="gateway_account" property="gatewayAccount"/>
+    <result column="gateway_password" property="gatewayPassword"/>
+    <result column="gateway_sign" property="gatewaySign"/>
+    <result column="delete_status" property="deleteStatus"/>
+    <result column="create_time" property="createTime"/>
+    <result column="create_by" property="createBy"/>
+    <result column="update_time" property="updateTime"/>
+    <result column="update_by" property="updateBy"/>
+  </resultMap>
+
+  <select id="listAllGateway" resultMap="GatewayVo">
+    select
+        c.channel_code,
+        g.id, g.gateway_code, g.gateway_account, g.gateway_password, g.gateway_sign, g.delete_status, g.create_time, g.create_by, g.update_time, g.update_by
+    from gateway g
+    join channel c on g.channel_id = c.id
+    order by g.create_time desc
+  </select>
+
+</mapper>

@@ -1,0 +1,30 @@
+package heguang5460.github.io.message.biz.bo;
+
+import java.util.Map;
+import lombok.Builder;
+import lombok.Data;
+
+/**
+ * @author he guang
+ * @date 2021/9/3 11:30
+ */
+@Data
+@Builder
+public class SendMessageBo {
+
+    /**
+     * 消息接收者
+     */
+    private Long toUser;
+
+    /**
+     * 场景码
+     */
+    private String sceneCode;
+
+    /**
+     * 参数变量
+     */
+    private Map<String, String> paramMap;
+
+}

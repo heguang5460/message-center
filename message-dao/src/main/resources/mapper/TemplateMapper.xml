@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="heguang5460.github.io.message.dao.mapper.TemplateMapper">
+
+  <!-- 通用查询映射结果 -->
+  <resultMap id="BaseResultMap" type="heguang5460.github.io.message.dao.domain.db.Template">
+    <id column="id" property="id"/>
+    <result column="scene_id" property="sceneId"/>
+    <result column="channel_id" property="channelId"/>
+    <result column="gateway_id" property="gatewayId"/>
+    <result column="template_code" property="templateCode"/>
+    <result column="template_content" property="templateContent"/>
+    <result column="delete_status" property="deleteStatus"/>
+    <result column="create_time" property="createTime"/>
+    <result column="create_by" property="createBy"/>
+    <result column="update_time" property="updateTime"/>
+    <result column="update_by" property="updateBy"/>
+  </resultMap>
+
+  <!-- 联表查询结果集封装PageMessageConfigVo -->
+  <resultMap id="PageMessageTemplateVo" type="heguang5460.github.io.message.dao.domain.vo.PageMessageTemplateVo">
+    <result column="scene_code" property="sceneCode"/>
+    <result column="channel_code" property="channelCode"/>
+    <result column="gateway_code" property="gatewayCode"/>
+    <result column="gateway_account" property="gatewayAccount"/>
+    <result column="gateway_password" property="gatewayPassword"/>
+    <result column="gateway_sign" property="gatewaySign"/>
+    <result column="template_code" property="templateCode"/>
+    <result column="template_content" property="templateContent"/>
+    <result column="delete_status" property="deleteStatus"/>
+    <result column="create_time" property="createTime"/>
+    <result column="create_by" property="createBy"/>
+    <result column="update_time" property="updateTime"/>
+    <result column="update_by" property="updateBy"/>
+  </resultMap>
+
+  <select id="queryPagination" resultMap="PageMessageTemplateVo">
+    select
+    s.scene_code,
+    c.channel_code,
+    g.gateway_code, g.gateway_account, g.gateway_password, g.gateway_sign,
+    t.template_code, t.template_content, t.delete_status, t.create_time, t.create_by, t.update_time, t.update_by
+    from template t
+    join scene s on t.scene_id = s.id
+    join channel c on t.channel_id = c.id
+    join gateway g on t.gateway_id = g.id
+    <include refid="queryPagination_where"/>
+    order by t.create_time desc
+  </select>
+
+  <sql id="queryPagination_where">
+    <where>
+      <if test="sceneCode != null and sceneCode != ''">
+        and s.scene_code = #{sceneCode}
+      </if>
+      <if test="channelCode != null and channelCode != ''">
+        and c.channel_code = #{channelCode}
+      </if>
+      <if test="gatewayCode != null and gatewayCode != ''">
+        and g.gateway_code = #{gatewayCode}
+      </if>
+      <if test="true">
+        and s.delete_status = 0
+        and c.delete_status = 0
+        and g.delete_status = 0
+        and t.delete_status = 0
+      </if>
+    </where>
+  </sql>
+
+</mapper>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f90857b-0f1f-4fff-854a-eb853c3b495b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1621478913" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="test" />
+                    <option name="lastUsedInstant" value="1621478852" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1621478814" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="sim" />
+                    <option name="lastUsedInstant" value="1621478734" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven" />
+        <option name="userSettingsFile" value="D:\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pIWvd53fZ6aKENqDp4HxeV14hD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/domain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="heguang5460.github.io.message.web.request" />
+      <recent name="heguang5460.github.io.message.biz.bo" />
+      <recent name="heguang5460.github.io.message.dao.domain.vo" />
+      <recent name="heguang5460.github.io.message.web.response" />
+      <recent name="heguang5460.github.io.message.dao.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\message\doc" />
+      <recent name="D:\project\nicetuan-collector-server\nicetuan-dao\src\main\resources" />
+      <recent name="D:\project\nicetuan-collector-server\nicetuan-core\src\main\java\net\nicetuan\mq" />
+      <recent name="D:\project\nicetuan-collector-server\nicetuan-common\src\main\java\net\nicetuan\result" />
+      <recent name="D:\project\nicetuan-collector-server\web\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="heguang5460.github.io.message.biz.bo" />
+      <recent name="heguang5460.github.io.message.enums" />
+      <recent name="net.nicetuan.algorithm" />
+      <recent name="net.nicetuan.mq.consumer" />
+      <recent name="net.nicetuan.repository" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\nicetuan-collector-server\nicetuan-dao\src\main\resources" />
+      <recent name="D:\project\nicetuan-collector-server\nicetuan-web\src\main\resources" />
+      <recent name="D:\project\nicetuan-collector-server\nicetuan-dao\src\main\resources\mapper" />
+      <recent name="D:\project\nicetuan-collector-server\web\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CodeGenerator (1)">
+    <configuration name="CodeGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="heguang5460.github.io.message.dao.util.CodeGenerator" />
+      <module name="message-dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="heguang5460.github.io.message.dao.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="net.nicetuan.util.CodeGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.nicetuan.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="heguang5460.github.io.message.util.CodeGenerator" />
+      <module name="message-dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="heguang5460.github.io.message.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.nicetuan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.nicetuan.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="message-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="heguang5460.github.io.message.MessageApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NicetuanCollectorApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="nicetuan-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.nicetuan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.nicetuan.NicetuanCollectorApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NicetuanDeliveryApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="message-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.nicetuan.delivery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.nicetuan.delivery.NicetuanDeliveryApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="Application.CodeGenerator (1)" />
+      <item itemvalue="Spring Boot.MessageApp" />
+      <item itemvalue="Spring Boot.App" />
+      <item itemvalue="Spring Boot.NicetuanCollectorApp" />
+      <item itemvalue="Spring Boot.NicetuanDeliveryApp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CodeGenerator (1)" />
+        <item itemvalue="Application.CodeGenerator" />
+        <item itemvalue="Spring Boot.NicetuanDeliveryApp" />
+        <item itemvalue="Spring Boot.NicetuanCollectorApp" />
+        <item itemvalue="Spring Boot.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\heguang\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f90857b-0f1f-4fff-854a-eb853c3b495b" name="Default Changelist" comment="" />
+      <created>1614871316392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614871316392</updated>
+      <workItem from="1614871320865" duration="5363000" />
+      <workItem from="1614876762968" duration="354000" />
+      <workItem from="1614877147189" duration="3271000" />
+      <workItem from="1614915812414" duration="43000" />
+      <workItem from="1614915930744" duration="1512000" />
+      <workItem from="1615041754438" duration="11862000" />
+      <workItem from="1615083354060" duration="28666000" />
+      <workItem from="1615168608262" duration="4525000" />
+      <workItem from="1615257142139" duration="21904000" />
+      <workItem from="1615341812154" duration="23736000" />
+      <workItem from="1615377984727" duration="4804000" />
+      <workItem from="1615387789122" duration="6503000" />
+      <workItem from="1615427793572" duration="8018000" />
+      <workItem from="1615437287647" duration="26541000" />
+      <workItem from="1615514049328" duration="19147000" />
+      <workItem from="1621425194125" duration="82000" />
+      <workItem from="1621427770028" duration="43000" />
+      <workItem from="1621477182303" duration="1371000" />
+      <workItem from="1621841418257" duration="340000" />
+      <workItem from="1621842455106" duration="760000" />
+      <workItem from="1621846388669" duration="695000" />
+      <workItem from="1622018225290" duration="659000" />
+      <workItem from="1622099491349" duration="1823000" />
+      <workItem from="1622201878698" duration="873000" />
+      <workItem from="1622256400599" duration="741000" />
+      <workItem from="1622284102493" duration="388000" />
+      <workItem from="1622427295077" duration="617000" />
+      <workItem from="1622430006947" duration="696000" />
+      <workItem from="1622775060778" duration="4940000" />
+      <workItem from="1622858822139" duration="132000" />
+      <workItem from="1625542297523" duration="647000" />
+      <workItem from="1627003584171" duration="1995000" />
+      <workItem from="1627373519422" duration="30000" />
+      <workItem from="1630305909820" duration="6610000" />
+      <workItem from="1630326356382" duration="6914000" />
+      <workItem from="1630369909041" duration="27249000" />
+      <workItem from="1630456575608" duration="15154000" />
+      <workItem from="1630545241371" duration="634000" />
+      <workItem from="1630580072910" duration="286000" />
+      <workItem from="1630585706198" duration="6571000" />
+      <workItem from="1630594300330" duration="667000" />
+      <workItem from="1630595045336" duration="650000" />
+      <workItem from="1630632841168" duration="4390000" />
+      <workItem from="1630643329636" duration="324000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="583" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630370072959">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="583" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1630370072959" />
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1630374751897">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1630374751897" />
+    <state x="765" y="438" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1630377157655">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="765" y="438" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1630377157655" />
+    <state x="497" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1630390201488">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="497" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1630390201488" />
+    <state x="690" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1630332960456">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="690" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1630332960456" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1622858954951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622858954951" />
+    <state x="740" y="270" key="FileChooserDialogImpl" timestamp="1630306789949">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="740" y="270" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1630306789949" />
+    <state width="384" height="558" key="Git.Branch.Popup" timestamp="1630639619771">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="384" height="558" key="Git.Branch.Popup/0.0.1920.1032@0.0.1920.1032" timestamp="1630639619771" />
+    <state width="380" height="558" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1622858878103" />
+    <state width="1877" height="217" key="GridCell.Tab.0.bottom" timestamp="1630639597400">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1630639597400" />
+    <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622283698237" />
+    <state width="1877" height="217" key="GridCell.Tab.0.center" timestamp="1630639597400">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1630639597400" />
+    <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622283698236" />
+    <state width="1877" height="217" key="GridCell.Tab.0.left" timestamp="1630639597400">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1630639597400" />
+    <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622283698236" />
+    <state width="1877" height="217" key="GridCell.Tab.0.right" timestamp="1630639597400">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1630639597400" />
+    <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622283698236" />
+    <state width="1877" height="217" key="GridCell.Tab.1.bottom" timestamp="1630639597400">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1630639597400" />
+    <state width="1877" height="217" key="GridCell.Tab.1.center" timestamp="1630639597400">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1630639597400" />
+    <state width="1877" height="217" key="GridCell.Tab.1.left" timestamp="1630639597400">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1630639597400" />
+    <state width="1877" height="217" key="GridCell.Tab.1.right" timestamp="1630639597400">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="217" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1630639597400" />
+    <state width="1877" height="286" key="GridCell.Tab.2.bottom" timestamp="1630493708822">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.2.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1630493708822" />
+    <state width="1877" height="286" key="GridCell.Tab.2.center" timestamp="1630493708821">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.2.center/0.0.1920.1032@0.0.1920.1032" timestamp="1630493708821" />
+    <state width="1877" height="286" key="GridCell.Tab.2.left" timestamp="1630493708821">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.2.left/0.0.1920.1032@0.0.1920.1032" timestamp="1630493708821" />
+    <state width="1877" height="286" key="GridCell.Tab.2.right" timestamp="1630493708822">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="286" key="GridCell.Tab.2.right/0.0.1920.1032@0.0.1920.1032" timestamp="1630493708822" />
+    <state x="641" y="219" key="RollbackChangesDialog" timestamp="1627005549211">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="641" y="219" key="RollbackChangesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1627005549211" />
+    <state x="641" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622777266781" />
+    <state x="461" y="160" key="SettingsEditor" timestamp="1630306792987">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="461" y="160" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1630306792987" />
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1622858954951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622858954951" />
+    <state x="681" y="257" width="564" height="524" key="StructurePopup" timestamp="1630462249116">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="681" y="257" width="564" height="524" key="StructurePopup/0.0.1920.1032@0.0.1920.1032" timestamp="1630462249116" />
+    <state x="759" y="293" key="chooseDestDirectoryDialog" timestamp="1630380405152">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="759" y="293" key="chooseDestDirectoryDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1630380405152" />
+    <state x="754" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630639603212">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="754" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1032@0.0.1920.1032" timestamp="1630639603212" />
+    <state x="754" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622430020345" />
+    <state x="754" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1622858824315" />
+    <state x="661" y="250" width="977" height="536" key="find.popup" timestamp="1630306182807">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="661" y="250" width="977" height="536" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1630306182807" />
+    <state x="661" y="252" width="977" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1622775098961" />
+    <state x="616" y="238" key="run.anything.popup" timestamp="1630334177982">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="616" y="238" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1630334177982" />
+    <state x="623" y="223" width="672" height="673" key="search.everywhere.popup" timestamp="1630467829766">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="623" y="223" width="672" height="673" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1630467829766" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622256433909" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1622776302195" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/nicetuan-core/src/main/java/net/nicetuan/authorization/AuthorizationManager.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/nicetuan-core/src/main/java/net/nicetuan/mq/ProducerConfirmCallback.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="DigestUtil.sha1Hex(md5 + timestamp)" language="JAVA" />
+        <watch expression="SHARDING_ROUTE_VALUE.get()" language="JAVA" />
+        <watch expression="e" language="JAVA" />
+        <watch expression="shardingRouteValue.getDataBaseShardingRoute()" language="JAVA" />
+        <watch expression="shardingRouteValue.getTableShardingRoute()" language="JAVA" />
+        <watch expression="var5" language="JAVA" />
+        <watch expression="hintManager" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

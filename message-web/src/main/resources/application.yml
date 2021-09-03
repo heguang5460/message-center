@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: message
+#mybaits-plus配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-enums-package: heguang5460.github.io.message.dao.enums
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+    db-config:
+      id-type: ID_WORKER
+      table-underline: true
+#actuator配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'info,health'
+  endpoint:
+    health:
+      show-details: always
+#白名单配置
+white:
+  ignore:
+    urls:
+      - "/actuator/**"
+      - "/monitor/**"
+      - "/message/**"
