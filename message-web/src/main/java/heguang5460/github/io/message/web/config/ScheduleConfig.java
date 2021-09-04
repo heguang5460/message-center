@@ -1,7 +1,7 @@
 package heguang5460.github.io.message.web.config;
 
 import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -24,6 +24,6 @@ public class ScheduleConfig implements SchedulingConfigurer {
 
     @Bean
     public Executor scheduledAnnotationExecutors() {
-        return Executors.newScheduledThreadPool(4);
+        return new ScheduledThreadPoolExecutor(4);
     }
 }

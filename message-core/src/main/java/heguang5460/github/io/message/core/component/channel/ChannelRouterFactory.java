@@ -1,4 +1,4 @@
-package heguang5460.github.io.message.core.router.channel;
+package heguang5460.github.io.message.core.component.channel;
 
 import heguang5460.github.io.message.dao.enums.ChannelCodeEnum;
 import java.util.Map;

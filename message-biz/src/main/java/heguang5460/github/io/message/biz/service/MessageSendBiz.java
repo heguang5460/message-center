@@ -76,8 +76,8 @@ public class MessageSendBiz {
             sceneChannelMQModel.setToUser(sendMessageBo.getToUser());
             sceneChannelMQModel.setParamMap(sendMessageBo.getParamMap());
             mqProducer.produce(
-                    MQExchangeEnum.EXCHANGE_ALL.name(),
-                    "",
+                    MQExchangeEnum.EXCHANGE_TASK.name(),
+                    MQExchangeEnum.EXCHANGE_TASK.name(),
                     sceneChannelMQModel
             );
 
