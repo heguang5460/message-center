@@ -72,7 +72,7 @@ CREATE TABLE `task` (
   `scene_id` bigint NOT NULL COMMENT '场景ID',
   `channel_id` bigint NOT NULL COMMENT '渠道ID',
   `param_json` text COMMENT '参数json字符串',
-	`create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '任务创建时间',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '任务创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='任务表';
 
@@ -81,8 +81,8 @@ CREATE TABLE `log` (
   `id` bigint NOT NULL COMMENT '主键ID',
   `scene_id` bigint NOT NULL COMMENT '场景ID',
   `channel_id` bigint NOT NULL COMMENT '渠道ID',
-  `gateway_id` bigint DEFAULT '0' COMMENT '通道ID',
-  `template_id` bigint DEFAULT '0' COMMENT '模板ID',
+  `gateway_id` bigint NOT NULL COMMENT '通道ID',
+  `template_id` bigint NOT NULL COMMENT '模板ID',
   `message_content` text COMMENT '消息文本',
   `message_status` tinyint NOT NULL COMMENT '消息状态 1待发送 2发送中 3发送成功 4发送失败 5接收成功 6接收失败',
   `to_be_send_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '待发送时间',

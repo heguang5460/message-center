@@ -11,9 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f90857b-0f1f-4fff-854a-eb853c3b495b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/doc/业务流程.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/消息发送流程.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/消息发送流程.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/消息发送流程.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/消息发送流程.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +298,7 @@
       <workItem from="1630595045336" duration="650000" />
       <workItem from="1630632841168" duration="4390000" />
       <workItem from="1630643329636" duration="11328000" />
-      <workItem from="1630727835906" duration="6401000" />
+      <workItem from="1630727835906" duration="7398000" />
     </task>
     <servers />
   </component>
