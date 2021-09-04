@@ -10,24 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f90857b-0f1f-4fff-854a-eb853c3b495b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/ex/CoreException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/enums/MessageStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/消息系统README.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/消息系统README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/bo/SendMessageBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/bo/SendMessageBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/domain/db/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/domain/db/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/mapper/SceneMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/mapper/SceneMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/GatewayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/GatewayService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/LogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/SceneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/SceneService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/TemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/service/TemplateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-dao/src/main/resources/mapper/SceneMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/message-dao/src/main/resources/mapper/SceneMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/config/AsyncConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/config/AsyncConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/controller/MessageSendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/controller/MessageSendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/request/SendMessageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/request/SendMessageRequest.java" afterDir="false" />
-    </list>
+    <list default="true" id="1f90857b-0f1f-4fff-854a-eb853c3b495b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -313,7 +296,7 @@
       <workItem from="1630595045336" duration="650000" />
       <workItem from="1630632841168" duration="4390000" />
       <workItem from="1630643329636" duration="11328000" />
-      <workItem from="1630727835906" duration="4402000" />
+      <workItem from="1630727835906" duration="4762000" />
     </task>
     <servers />
   </component>
