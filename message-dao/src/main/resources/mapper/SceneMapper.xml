@@ -12,10 +12,27 @@
     <result column="update_time" property="updateTime"/>
     <result column="update_by" property="updateBy"/>
   </resultMap>
+
+  <!-- 通用查询映射结果 -->
+  <resultMap id="SceneChannelVo" type="heguang5460.github.io.message.dao.domain.vo.SceneChannelVo">
+    <result column="scene_id" property="sceneId"/>
+    <result column="scene_code" property="sceneCode"/>
+    <result column="channel_id" property="channelId"/>
+    <result column="channel_code" property="channelCode"/>
+  </resultMap>
   <insert id="bindRelation">
-      REPLACE INTO scene_channel_relation
-      (scene_id, channel_id)
-      VALUES (#{sceneId}, #{channelId})
+    replace into scene_channel_relation
+    (scene_id, channel_id)
+    values (#{sceneid}, #{channelid})
   </insert>
+  <select id="querySceneChanelsByRelation" resultMap="SceneChannelVo">
+    select
+      s.id scene_id, s.scene_code
+      c.id channel_id, c.channel_code
+    from scene s
+    join scene_channel_relation scr on s.id = scr.scene_id
+    join channel c on c.id = scr.channel_id
+    where s.delete_status = 0 and c.delete_status = 0 and s.scene_code = #{sceneCode}
+  </select>
 
 </mapper>

@@ -147,4 +147,24 @@ public class TemplateService extends ServiceImpl<TemplateMapper, Template> imple
             this.updateBatchById(entities);
         }
     }
+
+    /**
+     * 查询模板
+     *
+     * @param sceneId
+     * @param channelId
+     * @param gatewayId
+     * @return
+     */
+    public Template queryBySceneChannelGateway(Long sceneId, Long channelId, Long gatewayId) {
+        Template entity = this.lambdaQuery()
+                .eq(Template::getSceneId, sceneId)
+                .eq(Template::getChannelId, channelId)
+                .eq(Template::getGatewayId, gatewayId)
+                .one();
+        if (Objects.isNull(entity)) {
+            log.warn("TemplateService.queryBySceneChannelGateway查询结果为空，返回null");
+        }
+        return entity;
+    }
 }

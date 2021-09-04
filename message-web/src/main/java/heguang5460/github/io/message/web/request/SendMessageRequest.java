@@ -13,6 +13,12 @@ import lombok.Data;
 public class SendMessageRequest {
 
     /**
+     * 消息发送者
+     */
+    @NotNull(message = "消息发送者不得为空")
+    private Long fromUser;
+
+    /**
      * 消息接收者
      */
     @NotNull(message = "消息接收者不得为空")

@@ -1,6 +1,7 @@
 package heguang5460.github.io.message.dao.domain.db;
 
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import heguang5460.github.io.message.dao.enums.MessageStatusEnum;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import lombok.Data;
@@ -55,7 +56,7 @@ public class Log extends Model<Log> {
     /**
      * 消息状态 1待发送 2发送中 3发送成功 4发送失败 5接收成功 6接收失败
      */
-    private Integer messageStatus;
+    private MessageStatusEnum messageStatus;
 
     /**
      * 待发送时间

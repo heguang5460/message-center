@@ -33,7 +33,7 @@ public class AsyncConfig implements AsyncConfigurer {
         // 最大线程数
         taskExecutor.setMaxPoolSize(8);
         // 队列大小
-        taskExecutor.setQueueCapacity(32);
+        taskExecutor.setQueueCapacity(256);
         // 线程名的前缀
         taskExecutor.setThreadNamePrefix("async-thread-");
         taskExecutor.initialize();

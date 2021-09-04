@@ -51,7 +51,7 @@ public class GatewayService extends ServiceImpl<GatewayMapper, Gateway> implemen
      * 构建网关实体
      *
      * @param channelId
-     * @param gatewayCode 存数据库都是大写
+     * @param gatewayCode     存数据库都是大写
      * @param gatewayAccount
      * @param gatewayPassword
      * @param gatewaySign
@@ -82,5 +82,26 @@ public class GatewayService extends ServiceImpl<GatewayMapper, Gateway> implemen
      */
     public List<GatewayVo> listAllGateway() {
         return this.baseMapper.listAllGateway();
+    }
+
+    /**
+     * 根据渠道ID查询网关
+     *
+     * @param channelId
+     * @return
+     */
+    public Gateway queryByChannelId(Long channelId) {
+        if (Objects.isNull(channelId)) {
+            log.warn("GatewayService.queryByChannelId查询参数channelId为空，直接返回null");
+            return null;
+        }
+        Gateway entity = this.lambdaQuery()
+                .eq(Gateway::getChannelId, channelId)
+                .eq(Gateway::getDeleteStatus, DeleteStatusEnum.NOTE_DELETED)
+                .one();
+        if (Objects.isNull(entity)) {
+            log.warn("GatewayService.queryByChannelId查询结果为空，直接返回");
+        }
+        return entity;
     }
 }

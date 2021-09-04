@@ -1,6 +1,7 @@
 package heguang5460.github.io.message.web.controller;
 
 import heguang5460.github.io.message.biz.bo.SendMessageBo;
+import heguang5460.github.io.message.biz.service.MessageSendBiz;
 import heguang5460.github.io.message.common.result.CommonResult;
 import heguang5460.github.io.message.web.request.SendMessageRequest;
 import javax.validation.Valid;
@@ -30,7 +31,7 @@ public class MessageSendController {
                 .paramMap(sendMessageRequest.getParamMap())
                 .build();
         //调用业务
-        messageSendBiz.sendMessage();
+        messageSendBiz.sendMessage(sendMessageBo);
         //返回
         return CommonResult.success();
     }

@@ -1,5 +1,6 @@
 package heguang5460.github.io.message.biz.bo;
 
+import com.sun.istack.internal.NotNull;
 import java.util.Map;
 import lombok.Builder;
 import lombok.Data;
@@ -12,6 +13,11 @@ import lombok.Data;
 @Builder
 public class SendMessageBo {
 
+
+    /**
+     * 消息发送者
+     */
+    private Long fromUser;
     /**
      * 消息接收者
      */

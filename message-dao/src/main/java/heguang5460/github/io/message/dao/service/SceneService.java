@@ -4,10 +4,11 @@ import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import heguang5460.github.io.message.dao.domain.db.Scene;
-import heguang5460.github.io.message.dao.domain.db.Template;
-import heguang5460.github.io.message.dao.mapper.SceneMapper;
+import heguang5460.github.io.message.dao.domain.vo.SceneChannelVo;
 import heguang5460.github.io.message.dao.enums.DeleteStatusEnum;
+import heguang5460.github.io.message.dao.mapper.SceneMapper;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Objects;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -45,6 +46,7 @@ public class SceneService extends ServiceImpl<SceneMapper, Scene> implements ISe
     /**
      * 维护场景渠道关系表
      * 使用REPLACE INTO
+     *
      * @param sceneId
      * @param channelId
      */
@@ -53,26 +55,8 @@ public class SceneService extends ServiceImpl<SceneMapper, Scene> implements ISe
     }
 
     /**
-     * 构建场景实体
-     * 并且保存
-     *
-     * @param sceneCode 存数据库大写
-     * @param loginUserId
-     * @return
-     */
-    private Scene buildSceneEntity(String sceneCode, Long loginUserId) {
-        Scene scene = new Scene();
-        scene.setId(IdWorker.getId());
-        scene.setSceneCode(sceneCode.toUpperCase());
-        scene.setDeleteStatus(DeleteStatusEnum.NOTE_DELETED);
-        scene.setCreateTime(LocalDateTime.now());
-        scene.setCreateBy(loginUserId);
-        this.save(scene);
-        return scene;
-    }
-
-    /**
      * 根据场景码查询场景配置
+     *
      * @param sceneCode
      * @return
      */
@@ -88,5 +72,35 @@ public class SceneService extends ServiceImpl<SceneMapper, Scene> implements ISe
             log.warn("SceneService.queryBySceneCode查询结果为null，直接返回null");
         }
         return entity;
+    }
+
+    /**
+     * 通过场景码查询出场景和渠道的关系
+     * 关联的所有渠道配置
+     *
+     * @param sceneCode
+     * @return
+     */
+    public List<SceneChannelVo> queryChannelsByRelation(String sceneCode) {
+        return this.baseMapper.querySceneChanelsByRelation(sceneCode);
+    }
+
+    /**
+     * 构建场景实体
+     * 并且保存
+     *
+     * @param sceneCode   存数据库大写
+     * @param loginUserId
+     * @return
+     */
+    private Scene buildSceneEntity(String sceneCode, Long loginUserId) {
+        Scene scene = new Scene();
+        scene.setId(IdWorker.getId());
+        scene.setSceneCode(sceneCode.toUpperCase());
+        scene.setDeleteStatus(DeleteStatusEnum.NOTE_DELETED);
+        scene.setCreateTime(LocalDateTime.now());
+        scene.setCreateBy(loginUserId);
+        this.save(scene);
+        return scene;
     }
 }
