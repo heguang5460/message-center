@@ -35,7 +35,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @Component
 public class WebLogAspect {
 
-    @Pointcut("execution(public * heguang5460.github.io.message.controller.*.*(..))")
+    @Pointcut("execution(public * heguang5460.github.io.message.web.controller.*.*(..))")
     public void webLog() {
     }
 
@@ -62,11 +62,11 @@ public class WebLogAspect {
         String parameter = getParameter(method, joinPoint.getArgs());
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
-        log.info("请求路径：{}，请求入参：{}", urlStr, parameter);
+        log.info("请求路径：{}，\n 请求入参：{}", urlStr, parameter);
         Object result = joinPoint.proceed();
         stopWatch.stop();
         long consumeTime = stopWatch.getTotalTimeMillis();
-        log.info("返回结果：{}，请求响应时间(毫秒)：{}", JSONUtil.toJsonStr(result), consumeTime);
+        log.info("返回结果：{}，\n 请求响应时间(毫秒)：{}", JSONUtil.toJsonStr(result), consumeTime);
         return result;
     }
 

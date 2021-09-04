@@ -11,20 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f90857b-0f1f-4fff-854a-eb853c3b495b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/handler/MessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/config/RabbitMqConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/service/MessageSendBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/service/MessageSendBiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-common/src/main/java/heguang5460/github/io/message/common/enums/MQExchangeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-common/src/main/java/heguang5460/github/io/message/common/enums/MQExchangeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/mq/consumer/MQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/mq/consumer/MQConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/router/channel/AbstractChannelRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/component/channel/AbstractChannelRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/router/channel/ChannelRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/component/channel/ChannelRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/router/channel/ChannelRouterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/component/channel/ChannelRouterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/router/channel/impl/AppPushChannelRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/component/channel/impl/AppPushChannelRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/router/channel/impl/MailChannelRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/component/channel/impl/MailChannelRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/router/channel/impl/MessageBoxChannelRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/component/channel/impl/MessageBoxChannelRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/router/channel/impl/SmsChannelRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/component/channel/impl/SmsChannelRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/config/ScheduleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/config/ScheduleConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/aop/WebLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/aop/WebLogAspect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +217,7 @@
       <workItem from="1630632841168" duration="4390000" />
       <workItem from="1630643329636" duration="11328000" />
       <workItem from="1630727835906" duration="8003000" />
-      <workItem from="1630748739612" duration="3196000" />
+      <workItem from="1630748739612" duration="4021000" />
     </task>
     <servers />
   </component>
