@@ -1,5 +1,6 @@
 package heguang5460.github.io.message.core.component.channel.impl;
 
+import cn.hutool.json.JSONUtil;
 import heguang5460.github.io.message.core.model.MessageModel;
 import heguang5460.github.io.message.core.component.channel.AbstractChannelRouter;
 import heguang5460.github.io.message.dao.enums.ChannelCodeEnum;
@@ -11,8 +12,8 @@ import org.springframework.stereotype.Service;
  *
  * @author he guang
  */
-@Service
 @Slf4j
+@Service
 public class MailChannelRouter extends AbstractChannelRouter {
 
     @Override
@@ -22,5 +23,7 @@ public class MailChannelRouter extends AbstractChannelRouter {
 
     @Override
     public void route(MessageModel messageModel) {
+        log.info("===================MAIL===================");
+        log.info("messageModel={}", JSONUtil.toJsonStr(messageModel));
     }
 }

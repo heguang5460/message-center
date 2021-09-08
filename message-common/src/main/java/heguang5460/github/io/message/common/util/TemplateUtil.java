@@ -14,7 +14,7 @@ import org.springframework.util.StringUtils;
  */
 public final class TemplateUtil {
 
-    private static final Pattern pattern = Pattern.compile("((?<=\\$\\{) [^\\}]*  (?=\\}))");
+    private static final Pattern pattern = Pattern.compile("((?<=\\$\\{)[^\\}]*(?=\\}))");
 
     private TemplateUtil() {
     }

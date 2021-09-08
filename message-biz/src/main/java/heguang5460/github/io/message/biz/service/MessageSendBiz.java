@@ -44,7 +44,7 @@ public class MessageSendBiz {
             log.error("MessageSendBiz.sendMessage 查询场景和渠道信息为空，参数sceneCode={}", sendMessageBo.getSceneCode());
             throw new BizException("MessageSendBiz.sendMessage 查询场景和渠道信息为空");
         }
-        //根据渠道分发
+        //根据渠道分发 各渠道异步处理
         for (SceneChannelVo sceneChannelVo : sceneChannelVos) {
             this.sendMessagePerChannel(sendMessageBo, sceneChannelVo);
         }
@@ -78,7 +78,8 @@ public class MessageSendBiz {
             mqProducer.produce(
                     MQExchangeEnum.EXCHANGE_TASK.name(),
                     MQExchangeEnum.EXCHANGE_TASK.name(),
-                    sceneChannelMQModel
+                    sceneChannelMQModel,
+                    task.getId().toString()
             );
 
         });

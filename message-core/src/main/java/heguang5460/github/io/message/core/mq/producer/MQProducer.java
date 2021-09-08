@@ -35,6 +35,20 @@ public class MQProducer implements RabbitTemplate.ConfirmCallback, RabbitTemplat
     }
 
     /**
+     * 推数据到MQ
+     *
+     * @param exchange
+     * @param routeKey
+     * @param object
+     * @param uniqId   MQ消息唯一ID
+     */
+    public void produce(String exchange, String routeKey, Object object, String uniqId) {
+        CorrelationData data = new CorrelationData();
+        data.setId(uniqId);
+        rabbitTemplate.convertAndSend(exchange, routeKey, object, data);
+    }
+
+    /**
      * 生产者回调-交换机端
      *
      * @param correlationData
@@ -45,9 +59,8 @@ public class MQProducer implements RabbitTemplate.ConfirmCallback, RabbitTemplat
     @Override
     public void confirm(CorrelationData correlationData, boolean ack, String cause) {
         if (!ack) {
-            log.error("MQProducer produce to exchange failed, cause by {}", cause);
-        } else {
-
+            log.error("MQProducer produce to exchange failed, message uniqId = {}, cause by {}",
+                    correlationData.getId(), cause);
         }
     }
 

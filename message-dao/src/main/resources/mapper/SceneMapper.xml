@@ -23,11 +23,11 @@
   <insert id="bindRelation">
     replace into scene_channel_relation
     (scene_id, channel_id)
-    values (#{sceneid}, #{channelid})
+    values (#{sceneId}, #{channelId})
   </insert>
   <select id="querySceneChanelsByRelation" resultMap="SceneChannelVo">
     select
-      s.id scene_id, s.scene_code
+      s.id scene_id, s.scene_code,
       c.id channel_id, c.channel_code
     from scene s
     join scene_channel_relation scr on s.id = scr.scene_id

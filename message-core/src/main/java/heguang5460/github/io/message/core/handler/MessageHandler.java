@@ -55,7 +55,7 @@ public class MessageHandler {
         }
         //合成消息文本
         String messageContent = TemplateUtil.templateContentToMessageContent(
-                data.getParamMap(), template.getTemplateCode());
+                data.getParamMap(), template.getTemplateContent());
         //记录流水
         Log logEntity = logService.buildLogEntity(
                 data.getSceneId(),

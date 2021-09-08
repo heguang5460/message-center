@@ -1,5 +1,6 @@
 package heguang5460.github.io.message.core.authorization;
 
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.digest.DigestUtil;
 import org.springframework.stereotype.Component;
 
@@ -19,6 +20,9 @@ public class AuthorizationManager {
      * @author he guang
      */
     public boolean judge(String bodyJson, String clientSignature) {
+        if (StrUtil.isBlank(clientSignature)) {
+            return false;
+        }
         //Md5
         String md5 = DigestUtil.md5Hex(bodyJson);
         //SHA1
