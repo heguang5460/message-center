@@ -11,7 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f90857b-0f1f-4fff-854a-eb853c3b495b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/aop/WebLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/aop/WebLogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,12 +100,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/domain" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jdk16/oracle-jdk-16" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -138,19 +138,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="heguang5460.github.io.message.util.CodeGenerator" />
-      <module name="message-dao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="heguang5460.github.io.message.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MessageApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="message-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="heguang5460.github.io.message.MessageApp" />
@@ -218,6 +205,8 @@
       <workItem from="1630643329636" duration="11328000" />
       <workItem from="1630727835906" duration="8003000" />
       <workItem from="1630748739612" duration="4021000" />
+      <workItem from="1630753042375" duration="1053000" />
+      <workItem from="1630763045915" duration="1682000" />
     </task>
     <servers />
   </component>
@@ -241,10 +230,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="586" y="194" key="#Inspections/0.0.1920.1032@0.0.1920.1032" timestamp="1630728141794" />
-    <state x="583" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630751878989">
+    <state x="583" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630756535746">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="583" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1630751878989" />
+    <state x="583" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1630756535746" />
     <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1630374751897">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -269,10 +258,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622858954951" />
-    <state x="740" y="270" key="FileChooserDialogImpl" timestamp="1630306789949">
+    <state x="740" y="270" key="FileChooserDialogImpl" timestamp="1630764938284">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="740" y="270" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1630306789949" />
+    <state x="740" y="270" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1630764938284" />
     <state width="386" height="560" key="Git.Branch.Popup" timestamp="1630727854165">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -335,10 +324,10 @@
     </state>
     <state x="641" y="219" key="RollbackChangesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1627005549211" />
     <state x="641" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622777266781" />
-    <state x="461" y="160" key="SettingsEditor" timestamp="1630306792987">
+    <state x="461" y="160" key="SettingsEditor" timestamp="1630764297499">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="461" y="160" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1630306792987" />
+    <state x="461" y="160" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1630764297499" />
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1622858954951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
