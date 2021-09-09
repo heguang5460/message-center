@@ -7,16 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="message-dao" />
-        <module name="message-common" />
         <module name="nicetuan-dao" />
         <module name="nicetuan-common" />
-        <module name="message-web" />
-        <module name="nicetuan-core" />
-        <module name="nicetuan-web" />
-        <module name="message-biz" />
-        <module name="message-core" />
+        <module name="message-common" />
         <module name="nicetuan-biz" />
+        <module name="nicetuan-web" />
+        <module name="message-core" />
+        <module name="nicetuan-core" />
+        <module name="message-web" />
+        <module name="message-biz" />
+        <module name="message-dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
