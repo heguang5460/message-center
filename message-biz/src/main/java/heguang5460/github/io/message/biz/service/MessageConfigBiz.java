@@ -120,10 +120,10 @@ public class MessageConfigBiz {
     @Transactional(rollbackFor = Exception.class)
     public void editMessageGateway(EditMessageGatewayBo editMessageGatewayBo) {
         //查询旧配置
-        Gateway gateway = gatewayService.queryByGatewayCode(editMessageGatewayBo.getOldGatewayCode());
+        Gateway gateway = gatewayService.queryByGatewayCode(editMessageGatewayBo.getGatewayCode());
         if (Objects.isNull(gateway)) {
             log.error("MessageConfigBiz.editMessageGateway查询网关配置为空，gatewayCode={}",
-                    editMessageGatewayBo.getOldGatewayCode());
+                    editMessageGatewayBo.getGatewayCode());
             throw new BizException("MessageConfigBiz.editMessageGateway查询网关配置为空");
         }
         //更新旧配置
@@ -133,21 +133,13 @@ public class MessageConfigBiz {
         if (StrUtil.isNotBlank(editMessageGatewayBo.getGatewayPassword())) {
             gateway.setGatewayPassword(editMessageGatewayBo.getGatewayPassword());
         }
-        if (StrUtil.isNotBlank(editMessageGatewayBo.getNewGatewayCode())) {
-            gateway.setGatewayCode(editMessageGatewayBo.getNewGatewayCode().toUpperCase());
-        }
         if (StrUtil.isNotBlank(editMessageGatewayBo.getGatewaySign())) {
             gateway.setGatewaySign(editMessageGatewayBo.getGatewaySign());
         }
         gateway.setUpdateBy(editMessageGatewayBo.getLoginUserId());
         gateway.setUpdateTime(LocalDateTime.now());
         gatewayService.updateById(gateway);
-        //更新模板码
-        templateService.updateTemplateCodeByGateway(
-                editMessageGatewayBo.getOldGatewayCode(),
-                editMessageGatewayBo.getNewGatewayCode(),
-                editMessageGatewayBo.getLoginUserId(),
-                gateway.getId());
+
     }
 
     /**
@@ -192,8 +184,8 @@ public class MessageConfigBiz {
         }
         String templateCode = templateService.generateTemplateCode(
                 saveMessageTemplateBo.getSceneCode(),
-                channel.getChannelCode().getChannelCode(),
-                gateway.getGatewayCode());
+                channel.getChannelCode().getCode(),
+                gateway.getGatewayCode().getCode());
         //查询模板配置
         Template template = templateService.queryByTemplateCode(templateCode);
         if (Objects.nonNull(template)) {

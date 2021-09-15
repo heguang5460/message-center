@@ -6,13 +6,13 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import heguang5460.github.io.message.dao.domain.db.Gateway;
 import heguang5460.github.io.message.dao.domain.vo.GatewayVo;
 import heguang5460.github.io.message.dao.enums.DeleteStatusEnum;
+import heguang5460.github.io.message.dao.enums.GatewayCodeEnum;
 import heguang5460.github.io.message.dao.mapper.GatewayMapper;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 /**
  * <p>
@@ -32,8 +32,8 @@ public class GatewayService extends ServiceImpl<GatewayMapper, Gateway> implemen
      * @param gatewayCode
      * @return
      */
-    public Gateway queryByGatewayCode(String gatewayCode) {
-        if (StringUtils.isEmpty(gatewayCode)) {
+    public Gateway queryByGatewayCode(GatewayCodeEnum gatewayCode) {
+        if (Objects.isNull(gatewayCode)) {
             log.warn("GatewayService.queryByGatewayCode参数为空，直接返回null");
             return null;
         }
@@ -59,11 +59,11 @@ public class GatewayService extends ServiceImpl<GatewayMapper, Gateway> implemen
      */
     public void buildGatewayEntity(
             Long channelId,
-            String gatewayCode, String gatewayAccount, String gatewayPassword, String gatewaySign, Long loginUserId) {
+            GatewayCodeEnum gatewayCode, String gatewayAccount, String gatewayPassword, String gatewaySign, Long loginUserId) {
         Gateway gateway = new Gateway();
         gateway.setId(IdWorker.getId());
         gateway.setChannelId(channelId);
-        gateway.setGatewayCode(gatewayCode.toUpperCase());
+        gateway.setGatewayCode(gatewayCode);
         gateway.setGatewayAccount(gatewayAccount);
         gateway.setGatewayPassword(gatewayPassword);
         gateway.setGatewaySign(gatewaySign);

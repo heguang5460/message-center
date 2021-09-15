@@ -1,5 +1,6 @@
 package heguang5460.github.io.message.biz.bo;
 
+import heguang5460.github.io.message.dao.enums.GatewayCodeEnum;
 import lombok.Builder;
 import lombok.Data;
 
@@ -12,13 +13,9 @@ import lombok.Data;
 public class EditMessageGatewayBo {
 
     /**
-     * 旧消息网关码
+     * 消息网关码
      */
-    private String oldGatewayCode;
-    /**
-     * 新消息网关码
-     */
-    private String newGatewayCode;
+    private GatewayCodeEnum gatewayCode;
     /**
      * 网关账号
      */

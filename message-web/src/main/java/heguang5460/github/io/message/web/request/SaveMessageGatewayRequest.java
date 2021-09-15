@@ -4,7 +4,6 @@ import heguang5460.github.io.message.web.validate.FlagValidator;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
-import org.hibernate.validator.constraints.Length;
 
 /**
  * @author he guang
@@ -23,7 +22,7 @@ public class SaveMessageGatewayRequest {
      * 消息网关码
      */
     @NotBlank(message = "网关码不得为空")
-    @Length(max = 32, message = "网关码最大长度为32个字符")
+    @FlagValidator(value = {"MWKJ", "ALIYUN", "JPUSH", "MESSAGE_BOX", "MAIL"}, message = "网关码错误")
     private String gatewayCode;
     /**
      * 网关账号

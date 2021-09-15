@@ -1,9 +1,9 @@
 package heguang5460.github.io.message.web.request;
 
+import heguang5460.github.io.message.web.validate.FlagValidator;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
-import org.hibernate.validator.constraints.Length;
 
 /**
  * @author he guang
@@ -13,15 +13,11 @@ import org.hibernate.validator.constraints.Length;
 public class EditMessageGatewayRequest {
 
     /**
-     * 旧消息网关码
+     * 消息网关码
      */
-    @NotBlank(message = "旧网关码不得为空")
-    @Length(max = 32, message = "旧网关码最大长度为32个字符")
-    private String oldGatewayCode;
-    /**
-     * 新消息网关码
-     */
-    private String newGatewayCode;
+    @NotBlank(message = "网关码不得为空")
+    @FlagValidator(value = {"MWKJ", "ALIYUN", "JPUSH", "MESSAGE_BOX", "MAIL"}, message = "网关码错误")
+    private String gatewayCode;
     /**
      * 网关账号
      */

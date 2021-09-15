@@ -13,6 +13,7 @@ import heguang5460.github.io.message.biz.service.MessageConfigBiz;
 import heguang5460.github.io.message.common.result.CommonPage;
 import heguang5460.github.io.message.common.result.CommonResult;
 import heguang5460.github.io.message.dao.enums.ChannelCodeEnum;
+import heguang5460.github.io.message.dao.enums.GatewayCodeEnum;
 import heguang5460.github.io.message.web.request.EditMessageGatewayRequest;
 import heguang5460.github.io.message.web.request.EditMessageTemplateRequest;
 import heguang5460.github.io.message.web.request.PageMessageTemplateRequest;
@@ -77,7 +78,7 @@ public class MessageConfigController {
         //参数转换
         SaveMessageGatewayBo saveMessageGatewayBo = SaveMessageGatewayBo.builder()
                 .channelCode(ChannelCodeEnum.find(saveMessageGatewayRequest.getChannelCode()))
-                .gatewayCode(saveMessageGatewayRequest.getGatewayCode())
+                .gatewayCode(GatewayCodeEnum.find(saveMessageGatewayRequest.getGatewayCode()))
                 .gatewayAccount(saveMessageGatewayRequest.getGatewayAccount())
                 .gatewayPassword(saveMessageGatewayRequest.getGatewayPassword())
                 .gatewaySign(saveMessageGatewayRequest.getGatewaySign())
@@ -92,8 +93,7 @@ public class MessageConfigController {
     public CommonResult editMessageGateway(@Valid @RequestBody EditMessageGatewayRequest editMessageGatewayRequest) {
         //参数转换
         EditMessageGatewayBo editMessageGatewayBo = EditMessageGatewayBo.builder()
-                .oldGatewayCode(editMessageGatewayRequest.getOldGatewayCode())
-                .newGatewayCode(editMessageGatewayRequest.getNewGatewayCode())
+                .gatewayCode(GatewayCodeEnum.find(editMessageGatewayRequest.getGatewayCode()))
                 .gatewayAccount(editMessageGatewayRequest.getGatewayAccount())
                 .gatewayPassword(editMessageGatewayRequest.getGatewayPassword())
                 .gatewaySign(editMessageGatewayRequest.getGatewaySign())
@@ -125,7 +125,7 @@ public class MessageConfigController {
         SaveMessageTemplateBo saveMessageTemplateBo = SaveMessageTemplateBo.builder()
                 .sceneCode(saveMessageTemplateRequest.getSceneCode().toUpperCase())
                 .channelCode(ChannelCodeEnum.find(saveMessageTemplateRequest.getChannelCode()))
-                .gatewayCode(saveMessageTemplateRequest.getGatewayCode())
+                .gatewayCode(GatewayCodeEnum.find(saveMessageTemplateRequest.getGatewayCode()))
                 .templateContent(saveMessageTemplateRequest.getTemplateContent())
                 .loginUserId(saveMessageTemplateRequest.getLoginUserId())
                 .build();

@@ -7,20 +7,20 @@ import java.util.Arrays;
 import lombok.Getter;
 
 /**
- * 渠道码枚举
- * SMS
- * APP_PUSH
- * MESSAGE_BOX
- * MAIL
+ * 网关码枚举
  *
  * @author he guang
  */
 @Getter
-public enum ChannelCodeEnum {
+public enum GatewayCodeEnum {
 
-    SMS("SMS", "手机短信"),
-    APP_PUSH("APP_PUSH", "APP推送"),
+    MWKJ_SMS("MWKJ_SMS", "梦网科技短信"),
+    ALIYUN_SMS("ALIYUN_SMS", "阿里云短信"),
+
+    JPUSH("JPUSH", "极光推送"),
+
     MESSAGE_BOX("MESSAGE_BOX", "留言信箱"),
+
     MAIL("MAIL", "邮件");
 
     @EnumValue
@@ -29,15 +29,15 @@ public enum ChannelCodeEnum {
 
     private String description;
 
-    ChannelCodeEnum(String code, String description) {
+    GatewayCodeEnum(String code, String description) {
         this.code = code;
         this.description = description;
     }
 
     @JsonCreator
-    public static ChannelCodeEnum find(String channelCode) {
-        return Arrays.stream(ChannelCodeEnum.values())
-                .filter(o -> o.getCode().equals(channelCode))
+    public static GatewayCodeEnum find(String gatewayCode) {
+        return Arrays.stream(GatewayCodeEnum.values())
+                .filter(o -> o.getCode().equals(gatewayCode))
                 .findFirst()
                 .orElse(null);
     }

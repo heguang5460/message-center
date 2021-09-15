@@ -121,34 +121,6 @@ public class TemplateService extends ServiceImpl<TemplateMapper, Template> imple
     }
 
     /**
-     * 更新模板码
-     * 因网关码变更
-     *
-     * @param oldGatewayCode
-     * @param newGatewayCode 大写
-     * @param loginUserId
-     * @param gatewayId
-     */
-    public void updateTemplateCodeByGateway(String oldGatewayCode, String newGatewayCode, Long loginUserId,
-            Long gatewayId) {
-        List<Template> templates = this.lambdaQuery()
-                .eq(Template::getGatewayId, gatewayId)
-                .list();
-        if (!CollectionUtils.isEmpty(templates)) {
-            List<Template> entities = templates.stream()
-                    .filter(Objects::nonNull)
-                    .map(o -> {
-                        o.setTemplateCode(o.getTemplateCode().replace(oldGatewayCode, newGatewayCode));
-                        o.setUpdateBy(loginUserId);
-                        o.setUpdateTime(LocalDateTime.now());
-                        return o;
-                    })
-                    .collect(Collectors.toList());
-            this.updateBatchById(entities);
-        }
-    }
-
-    /**
      * 查询模板
      *
      * @param sceneId

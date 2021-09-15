@@ -2,8 +2,9 @@ package heguang5460.github.io.message.dao.domain.db;
 
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import heguang5460.github.io.message.dao.enums.DeleteStatusEnum;
-import java.time.LocalDateTime;
+import heguang5460.github.io.message.dao.enums.GatewayCodeEnum;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -36,7 +37,7 @@ public class Gateway extends Model<Gateway> {
     /**
      * 网关码
      */
-    private String gatewayCode;
+    private GatewayCodeEnum gatewayCode;
 
     /**
      * 账号
