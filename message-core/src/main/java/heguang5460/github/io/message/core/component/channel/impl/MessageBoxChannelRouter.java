@@ -23,7 +23,7 @@ public class MessageBoxChannelRouter extends AbstractChannelRouter {
 
     @Override
     public void route(MessageModel messageModel) {
-        log.info("===================MESSAGE_BOX===================");
-        log.info("messageModel={}", JSONUtil.toJsonStr(messageModel));
+        log.info("路由到站内信渠道：messageModel={}", JSONUtil.toJsonStr(messageModel));
+        super.route(messageModel);
     }
 }

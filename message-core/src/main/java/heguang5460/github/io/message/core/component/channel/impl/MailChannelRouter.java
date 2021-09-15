@@ -23,7 +23,7 @@ public class MailChannelRouter extends AbstractChannelRouter {
 
     @Override
     public void route(MessageModel messageModel) {
-        log.info("===================MAIL===================");
-        log.info("messageModel={}", JSONUtil.toJsonStr(messageModel));
+        log.info("路由到邮件渠道：messageModel={}", JSONUtil.toJsonStr(messageModel));
+        super.route(messageModel);
     }
 }

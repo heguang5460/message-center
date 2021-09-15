@@ -1,5 +1,8 @@
 package heguang5460.github.io.message.core.component.gateway.sms;
 
+import heguang5460.github.io.message.core.component.gateway.AbstractSender;
+import heguang5460.github.io.message.core.model.MessageModel;
+import heguang5460.github.io.message.dao.enums.GatewayCodeEnum;
 import org.springframework.stereotype.Component;
 
 /**
@@ -7,7 +10,16 @@ import org.springframework.stereotype.Component;
  * @date 2021/9/13 15:15
  */
 
-@Component("ALIYUN_SMS")
-public class AliYunSms {
+@Component
+public class AliYunSms extends AbstractSender {
 
+    @Override
+    protected GatewayCodeEnum gatewayCode() {
+        return GatewayCodeEnum.ALIYUN_SMS;
+    }
+
+    @Override
+    protected void realSend(MessageModel messageModel) {
+
+    }
 }

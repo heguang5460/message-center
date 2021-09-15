@@ -55,7 +55,7 @@ CREATE TABLE `template` (
   `scene_id` bigint NOT NULL COMMENT '场景ID',
   `channel_id` bigint NOT NULL COMMENT '渠道ID',
   `gateway_id` bigint NOT NULL COMMENT '网关ID',
-  `template_code` varchar(32) NOT NULL COMMENT '模板码',
+  `template_code` varchar(64) NOT NULL COMMENT '模板码',
   `template_content` text COMMENT '模板内容',
   `delete_status` tinyint NOT NULL DEFAULT '1' COMMENT '删除标识 0未被删除 1已被删除',
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',

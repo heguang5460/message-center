@@ -23,7 +23,7 @@ public class AppPushChannelRouter extends AbstractChannelRouter {
 
     @Override
     public void route(MessageModel messageModel) {
-        log.info("===================APP_PUSH===================");
-        log.info("messageModel={}", JSONUtil.toJsonStr(messageModel));
+        log.info("路由到APP推送渠道：messageModel={}", JSONUtil.toJsonStr(messageModel));
+        super.route(messageModel);
     }
 }
