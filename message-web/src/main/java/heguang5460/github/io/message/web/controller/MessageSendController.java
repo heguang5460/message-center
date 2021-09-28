@@ -26,6 +26,7 @@ public class MessageSendController {
     public CommonResult sendMessage(@Valid @RequestBody SendMessageRequest sendMessageRequest){
         //转换参数
         SendMessageBo sendMessageBo = SendMessageBo.builder()
+                .fromUser(sendMessageRequest.getFromUser())
                 .toUser(sendMessageRequest.getToUser())
                 .sceneCode(sendMessageRequest.getSceneCode())
                 .paramMap(sendMessageRequest.getParamMap())

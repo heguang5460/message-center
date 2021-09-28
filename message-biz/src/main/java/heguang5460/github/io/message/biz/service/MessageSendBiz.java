@@ -64,7 +64,7 @@ public class MessageSendBiz {
             Task task = taskService.buildTaskEntity(
                     sceneChannelVo.getSceneId(),
                     sceneChannelVo.getChannelId(),
-                    JSONUtil.toJsonStr(sendMessageBo.getParamMap()));
+                    JSONUtil.toJsonStr(sendMessageBo));
             //推mq
             SceneChannelMQModel sceneChannelMQModel = new SceneChannelMQModel();
             sceneChannelMQModel.setTaskId(task.getId());
@@ -81,7 +81,6 @@ public class MessageSendBiz {
                     sceneChannelMQModel,
                     task.getId().toString()
             );
-
         });
     }
 }

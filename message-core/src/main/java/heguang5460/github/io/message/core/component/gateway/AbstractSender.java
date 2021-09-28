@@ -34,6 +34,7 @@ public abstract class AbstractSender implements Sender {
      *
      * @param messageModel
      */
+    @Override
     public void send(MessageModel messageModel) {
         //记录此消息为发送中
         this.updateMessageStatus(MessageStatusEnum.SENDING, LocalDateTime.now(), messageModel.getLog());

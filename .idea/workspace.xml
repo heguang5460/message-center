@@ -14,7 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f90857b-0f1f-4fff-854a-eb853c3b495b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/message-common/src/main/java/heguang5460/github/io/message/common/constants/SceneConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/service/MessageSendBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/service/MessageSendBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/controller/MessageSendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/controller/MessageSendController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +222,8 @@
       <workItem from="1631670208594" duration="4340000" />
       <workItem from="1631688906721" duration="9136000" />
       <workItem from="1631700935721" duration="4066000" />
-      <workItem from="1631844167372" duration="681000" />
+      <workItem from="1631844167372" duration="2009000" />
+      <workItem from="1632795165741" duration="120000" />
     </task>
     <servers />
   </component>

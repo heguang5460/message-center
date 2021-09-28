@@ -39,6 +39,7 @@ public abstract class AbstractChannelRouter implements ChannelRouter {
      * @param messageModel
      * @author he guang
      */
+    @Override
     public void route(MessageModel messageModel) {
         Gateway gateway = messageModel.getGateway();
         GatewaySenderFactory.newInstance(gateway.getGatewayCode()).send(messageModel);
