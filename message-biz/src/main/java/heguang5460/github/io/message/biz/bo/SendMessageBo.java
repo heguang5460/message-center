@@ -1,6 +1,5 @@
 package heguang5460.github.io.message.biz.bo;
 
-import com.sun.istack.internal.NotNull;
 import java.util.Map;
 import lombok.Builder;
 import lombok.Data;
