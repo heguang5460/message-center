@@ -49,16 +49,16 @@ public class WebLogAspect {
 
     @Around("webLog()")
     public Object doAround(ProceedingJoinPoint joinPoint) throws Throwable {
-        //获取当前请求对象
+        // 获取当前请求对象
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
-        //获取当前请求的方法
+        // 获取当前请求的方法
         Signature signature = joinPoint.getSignature();
         MethodSignature methodSignature = (MethodSignature) signature;
         Method method = methodSignature.getMethod();
-        //当前请求的路径
+        // 当前请求的路径
         String urlStr = request.getRequestURI();
-        //获取当前请求的参数
+        // 获取当前请求的参数
         String parameter = getParameter(method, joinPoint.getArgs());
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
@@ -79,7 +79,7 @@ public class WebLogAspect {
         List<Object> argList = new ArrayList<>();
         Parameter[] parameters = method.getParameters();
         for (int i = 0; i < parameters.length; i++) {
-            //将RequestBody注解修饰的参数作为请求参数
+            // 将RequestBody注解修饰的参数作为请求参数
             RequestBody requestBody = parameters[i].getAnnotation(RequestBody.class);
             if (requestBody != null) {
                 argList.add(args[i]);

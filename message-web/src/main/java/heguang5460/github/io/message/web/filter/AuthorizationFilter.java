@@ -45,10 +45,10 @@ public class AuthorizationFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
             throws IOException, ServletException {
-        // 转换
+        //  转换
         RepeatableHttpServletRequestWrapper request = (RepeatableHttpServletRequestWrapper) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
-        //白名单放行
+        // 白名单放行
         String uri = request.getRequestURI();
         List<String> ignoreUrls = whiteIgnoreUrlsConfig.getUrls();
         PathMatcher pathMatcher = new AntPathMatcher();
@@ -58,10 +58,10 @@ public class AuthorizationFilter implements Filter {
                 return;
             }
         }
-        // 参数
+        //  参数
         String signature = request.getHeader(Constants.AUTHORIZATION);
         String bodyJson = RepeatableHttpServletRequestWrapper.convertRequestBodyToJsonStr(request);
-        // 鉴权
+        //  鉴权
         if (authorizationManager.judge(bodyJson, signature)) {
             filterChain.doFilter(request, response);
         } else {

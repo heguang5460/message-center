@@ -14,7 +14,7 @@ import lombok.Data;
 @Data
 public class MessageModel implements Serializable {
 
-    //数据库数据配置
+    // 数据库数据配置
 
     private Gateway gateway;
 
@@ -22,7 +22,7 @@ public class MessageModel implements Serializable {
 
     private Log log;
 
-    //消息发送需要参数
+    // 消息发送需要参数
 
     private Long fromUser;
 

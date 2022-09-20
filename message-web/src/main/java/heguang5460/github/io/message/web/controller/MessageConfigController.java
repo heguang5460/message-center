@@ -48,21 +48,21 @@ public class MessageConfigController {
 
     @PostMapping("/channel/save")
     public CommonResult saveMessageChannel(@Valid @RequestBody SaveMessageChannelRequest saveMessageChannelRequest) {
-        //参数转换
+        // 参数转换
         SaveMessageChannelBo saveMessageChannelBo = SaveMessageChannelBo.builder()
                 .channelCode(ChannelCodeEnum.find(saveMessageChannelRequest.getChannelCode()))
                 .loginUserId(saveMessageChannelRequest.getLoginUserId())
                 .build();
-        //配置消息渠道
+        // 配置消息渠道
         messageConfigBiz.saveMessageChannel(saveMessageChannelBo);
         return CommonResult.success();
     }
 
     @GetMapping("/channel/list")
     public CommonResult<List<ListMessageChannelResponse>> listMessageChannel() {
-        //列表消息渠道
+        // 列表消息渠道
         List<ListMessageChannelBo> boList = messageConfigBiz.listMessageChannel();
-        //返回转换
+        // 返回转换
         List<ListMessageChannelResponse> data = boList.stream()
                 .filter(Objects::nonNull)
                 .map(o -> {
@@ -75,7 +75,7 @@ public class MessageConfigController {
 
     @PostMapping("/gateway/save")
     public CommonResult saveMessageGateway(@Valid @RequestBody SaveMessageGatewayRequest saveMessageGatewayRequest) {
-        //参数转换
+        // 参数转换
         SaveMessageGatewayBo saveMessageGatewayBo = SaveMessageGatewayBo.builder()
                 .channelCode(ChannelCodeEnum.find(saveMessageGatewayRequest.getChannelCode()))
                 .gatewayCode(GatewayCodeEnum.find(saveMessageGatewayRequest.getGatewayCode()))
@@ -84,14 +84,14 @@ public class MessageConfigController {
                 .gatewaySign(saveMessageGatewayRequest.getGatewaySign())
                 .loginUserId(saveMessageGatewayRequest.getLoginUserId())
                 .build();
-        //配置消息网关
+        // 配置消息网关
         messageConfigBiz.saveMessageGateway(saveMessageGatewayBo);
         return CommonResult.success();
     }
 
     @PostMapping("/gateway/edit")
     public CommonResult editMessageGateway(@Valid @RequestBody EditMessageGatewayRequest editMessageGatewayRequest) {
-        //参数转换
+        // 参数转换
         EditMessageGatewayBo editMessageGatewayBo = EditMessageGatewayBo.builder()
                 .gatewayCode(GatewayCodeEnum.find(editMessageGatewayRequest.getGatewayCode()))
                 .gatewayAccount(editMessageGatewayRequest.getGatewayAccount())
@@ -99,16 +99,16 @@ public class MessageConfigController {
                 .gatewaySign(editMessageGatewayRequest.getGatewaySign())
                 .loginUserId(editMessageGatewayRequest.getLoginUserId())
                 .build();
-        //编辑修改消息网关
+        // 编辑修改消息网关
         messageConfigBiz.editMessageGateway(editMessageGatewayBo);
         return CommonResult.success();
     }
 
     @GetMapping("/gateway/list")
     public CommonResult<List<ListMessageGatewayResponse>> listMessageGateway() {
-        //列表消息渠道
+        // 列表消息渠道
         List<ListMessageGatewayBo> boList = messageConfigBiz.listMessageGateway();
-        //返回转换
+        // 返回转换
         List<ListMessageGatewayResponse> data = boList.stream()
                 .filter(Objects::nonNull)
                 .map(o -> {
@@ -121,7 +121,7 @@ public class MessageConfigController {
 
     @PostMapping("/template/save")
     public CommonResult saveMessageTemplate(@Valid @RequestBody SaveMessageTemplateRequest saveMessageTemplateRequest) {
-        //参数转换
+        // 参数转换
         SaveMessageTemplateBo saveMessageTemplateBo = SaveMessageTemplateBo.builder()
                 .sceneCode(saveMessageTemplateRequest.getSceneCode().toUpperCase())
                 .channelCode(ChannelCodeEnum.find(saveMessageTemplateRequest.getChannelCode()))
@@ -129,20 +129,20 @@ public class MessageConfigController {
                 .templateContent(saveMessageTemplateRequest.getTemplateContent())
                 .loginUserId(saveMessageTemplateRequest.getLoginUserId())
                 .build();
-        //配置消息
+        // 配置消息
         messageConfigBiz.saveMessageTemplate(saveMessageTemplateBo);
         return CommonResult.success();
     }
 
     @PostMapping("/template/edit")
     public CommonResult editMessageTemplate(@Valid @RequestBody EditMessageTemplateRequest editMessageTemplateRequest) {
-        //参数转换
+        // 参数转换
         EditMessageTemplateBo editMessageTemplateBo = EditMessageTemplateBo.builder()
                 .templateCode(editMessageTemplateRequest.getTemplateCode())
                 .templateContent(editMessageTemplateRequest.getTemplateContent())
                 .loginUserId(editMessageTemplateRequest.getLoginUserId())
                 .build();
-        //配置消息
+        // 配置消息
         messageConfigBiz.editMessageTemplate(editMessageTemplateBo);
         return CommonResult.success();
     }
@@ -150,16 +150,16 @@ public class MessageConfigController {
     @GetMapping("/template/page")
     public CommonResult<CommonPage<PageMessageTemplateResponse>> pageMessageTemplate(
             PageMessageTemplateRequest pageMessageTemplateRequest) {
-        //参数转换
+        // 参数转换
         PageMessageTemplateBo pageMessageTemplateBo = PageMessageTemplateBo.builder()
                 .sceneCode(pageMessageTemplateRequest.getSceneCode())
                 .channelCode(pageMessageTemplateRequest.getChannelCode())
                 .gatewayCode(pageMessageTemplateRequest.getGatewayCode())
                 .build();
-        //配置分页列表
+        // 配置分页列表
         CommonPage<PageMessageTemplateBo> commonPageBo = messageConfigBiz.pageMessageTemplate(
                 pageMessageTemplateRequest.getCurrent(), pageMessageTemplateRequest.getSize(), pageMessageTemplateBo);
-        //返回转换
+        // 返回转换
         CommonPage<PageMessageTemplateResponse> commonPage = new CommonPage<>();
         commonPage.setTotal(commonPageBo.getTotal());
         commonPage.setSize(commonPageBo.getSize());

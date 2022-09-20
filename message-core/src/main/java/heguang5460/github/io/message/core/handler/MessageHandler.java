@@ -40,23 +40,23 @@ public class MessageHandler {
 
     @Transactional(rollbackFor = Exception.class)
     public void handlerMqModel(SceneChannelMQModel data) {
-        //领取任务
+        // 领取任务
         taskService.removeById(data.getTaskId());
-        //查询网关
+        // 查询网关
         Gateway gateway = gatewayService.queryByChannelId(data.getChannelId());
         if (Objects.isNull(gateway)) {
             throw new CoreException("MQConsumer.consume查询网关配置为空");
         }
-        //查询模板
+        // 查询模板
         Template template = templateService.queryBySceneChannelGateway(
                 data.getSceneId(), data.getChannelId(), gateway.getId());
         if (Objects.isNull(template)) {
             throw new CoreException("MQConsumer.consume查询模板配置为空");
         }
-        //合成消息文本
+        // 合成消息文本
         String messageContent = TemplateUtil.templateContentToMessageContent(
                 data.getParamMap(), template.getTemplateContent());
-        //记录流水
+        // 记录流水
         Log logEntity = logService.buildLogEntity(
                 data.getSceneId(),
                 data.getChannelId(),
@@ -64,7 +64,7 @@ public class MessageHandler {
                 template.getId(),
                 messageContent
         );
-        //组合参数
+        // 组合参数
         MessageModel messageModel = new MessageModel();
         messageModel.setGateway(gateway);
         messageModel.setTemplate(template);
@@ -73,7 +73,7 @@ public class MessageHandler {
         messageModel.setToUser(data.getToUser());
         messageModel.setParamMap(data.getParamMap());
         messageModel.setMessageContent(messageContent);
-        //渠道路由
+        // 渠道路由
         ChannelRouterFactory.newInstance(ChannelCodeEnum.find(data.getChannelCode())).route(messageModel);
     }
 

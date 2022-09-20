@@ -119,14 +119,14 @@ public class MessageConfigBiz {
      */
     @Transactional(rollbackFor = Exception.class)
     public void editMessageGateway(EditMessageGatewayBo editMessageGatewayBo) {
-        //查询旧配置
+        // 查询旧配置
         Gateway gateway = gatewayService.queryByGatewayCode(editMessageGatewayBo.getGatewayCode());
         if (Objects.isNull(gateway)) {
             log.error("MessageConfigBiz.editMessageGateway查询网关配置为空，gatewayCode={}",
                     editMessageGatewayBo.getGatewayCode());
             throw new BizException("MessageConfigBiz.editMessageGateway查询网关配置为空");
         }
-        //更新旧配置
+        // 更新旧配置
         if (StrUtil.isNotBlank(editMessageGatewayBo.getGatewayAccount())) {
             gateway.setGatewayAccount(editMessageGatewayBo.getGatewayAccount());
         }
@@ -168,14 +168,14 @@ public class MessageConfigBiz {
      */
     @Transactional(rollbackFor = Exception.class)
     public void saveMessageTemplate(SaveMessageTemplateBo saveMessageTemplateBo) {
-        //查询渠道配置
+        // 查询渠道配置
         Channel channel = channelService.queryByChannelCode(saveMessageTemplateBo.getChannelCode());
         if (Objects.isNull(channel)) {
             log.error("MessageConfigBiz.saveMessageConfig查询渠道配置为空，channelCode={}",
                     saveMessageTemplateBo.getChannelCode());
             throw new BizException("MessageConfigBiz.saveMessageConfig查询渠道配置为空");
         }
-        //查询通道配置
+        // 查询通道配置
         Gateway gateway = gatewayService.queryByGatewayCode(saveMessageTemplateBo.getGatewayCode());
         if (Objects.isNull(gateway)) {
             log.error("MessageConfigBiz.saveMessageConfig查询网关配置为空，gatewayCode={}",
@@ -186,25 +186,25 @@ public class MessageConfigBiz {
                 saveMessageTemplateBo.getSceneCode(),
                 channel.getChannelCode().getCode(),
                 gateway.getGatewayCode().getCode());
-        //查询模板配置
+        // 查询模板配置
         Template template = templateService.queryByTemplateCode(templateCode);
         if (Objects.nonNull(template)) {
             log.error("消息模板已存在");
             throw new BizException("消息模板已存在");
         }
-        //查询场景配置
+        // 查询场景配置
         Scene scene = sceneService.queryBySceneCode(saveMessageTemplateBo.getSceneCode());
         if (Objects.isNull(scene)) {
-            //保存场景、并维护场景和渠道的关系
+            // 保存场景、并维护场景和渠道的关系
             scene = sceneService.saveSceneAndBindRelation(
                     saveMessageTemplateBo.getSceneCode(),
                     channel.getId(),
                     saveMessageTemplateBo.getLoginUserId());
         } else {
-            //维护场景和渠道的关系
+            // 维护场景和渠道的关系
             sceneService.bindRelation(scene.getId(), channel.getId());
         }
-        //保存模板
+        // 保存模板
         template = templateService.buildTemplateEntity(
                 scene.getId(),
                 channel.getId(),

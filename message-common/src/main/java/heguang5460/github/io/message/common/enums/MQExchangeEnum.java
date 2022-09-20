@@ -19,10 +19,10 @@ import lombok.Getter;
 @Getter
 public enum MQExchangeEnum {
 
-    //任务交换机
+    // 任务交换机
     EXCHANGE_TASK("EXCHANGE_TASK", "任务交换机"),
 
-    //渠道交换机
+    // 渠道交换机
     EXCHANGE_SMS("SMS", "手机短信渠道交换机"),
     EXCHANGE_APP_PUSH("APP_PUSH", "APP推送渠道交换机"),
     EXCHANGE_MESSAGE_BOX("MESSAGE_BOX", "留言信箱渠道交换机"),

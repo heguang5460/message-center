@@ -36,18 +36,18 @@ public abstract class AbstractSender implements Sender {
      */
     @Override
     public void send(MessageModel messageModel) {
-        //记录此消息为发送中
+        // 记录此消息为发送中
         this.updateMessageStatus(MessageStatusEnum.SENDING, LocalDateTime.now(), messageModel.getLog());
-        //调用三方
+        // 调用三方
         try {
             realSend(messageModel);
         } catch (Exception e) {
-            //记录发送完成状态-发送失败
+            // 记录发送完成状态-发送失败
             log.error("网关子类GatewayCodeEnum={}发送失败，失败异常信息ex={}", gatewayCode(), e.getMessage());
             this.updateMessageStatus(MessageStatusEnum.SEND_FAIL, LocalDateTime.now(), messageModel.getLog());
             return;
         }
-        //记录发送完成状态-发送成功
+        // 记录发送完成状态-发送成功
         this.updateMessageStatus(MessageStatusEnum.SEND_SUCCESS, LocalDateTime.now(), messageModel.getLog());
     }
 

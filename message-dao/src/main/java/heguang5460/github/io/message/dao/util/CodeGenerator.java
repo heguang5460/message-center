@@ -24,9 +24,9 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
         String projectPath = System.getProperty("user.dir");
-        // 代码生成器
+        //  代码生成器
         AutoGenerator mpg = new AutoGenerator();
-        // 全局配置
+        //  全局配置
         GlobalConfig gc = new GlobalConfig();
         gc.setOutputDir(projectPath + "/message-dao/src/main/java");
         gc.setAuthor("he guang");
@@ -40,7 +40,7 @@ public class CodeGenerator {
         gc.setBaseResultMap(true);
         gc.setBaseColumnList(false);
         mpg.setGlobalConfig(gc);
-        //数据源
+        // 数据源
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setUrl(
                 "jdbc:mysql:///message?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
@@ -49,7 +49,7 @@ public class CodeGenerator {
         dsc.setPassword("123456");
         mpg.setDataSource(dsc);
 
-        //包配置
+        // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent("heguang5460.github.io.message.dao");
         pc.setEntity("domain.db");
@@ -57,7 +57,7 @@ public class CodeGenerator {
         pc.setServiceImpl("service");
         mpg.setPackageInfo(pc);
 
-        // 自定义配置
+        //  自定义配置
         InjectionConfig cfg = new InjectionConfig() {
             @Override
             public void initMap() {
@@ -74,7 +74,7 @@ public class CodeGenerator {
         cfg.setFileOutConfigList(focList);
         mpg.setCfg(cfg);
         mpg.setTemplate(new TemplateConfig().setXml(null));
-        // 策略配置
+        //  策略配置
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);

@@ -38,13 +38,13 @@ public class MessageSendBiz {
      * @param sendMessageBo
      */
     public void sendMessage(SendMessageBo sendMessageBo) {
-        //查询场景关联的所有渠道
+        // 查询场景关联的所有渠道
         List<SceneChannelVo> sceneChannelVos = sceneService.queryChannelsByRelation(sendMessageBo.getSceneCode());
         if (CollectionUtil.isEmpty(sceneChannelVos)) {
             log.error("MessageSendBiz.sendMessage 查询场景和渠道信息为空，参数sceneCode={}", sendMessageBo.getSceneCode());
             throw new BizException("MessageSendBiz.sendMessage 查询场景和渠道信息为空");
         }
-        //根据渠道分发 各渠道异步处理
+        // 根据渠道分发 各渠道异步处理
         for (SceneChannelVo sceneChannelVo : sceneChannelVos) {
             this.sendMessagePerChannel(sendMessageBo, sceneChannelVo);
         }
@@ -60,12 +60,12 @@ public class MessageSendBiz {
         log.info("场景码sceneCode={},渠道码channelCode={}投递MQ消息到对应渠道交换机",
                 sendMessageBo.getSceneCode(), sceneChannelVo.getChannelCode());
         executorService.submit(() -> {
-            //生成任务
+            // 生成任务
             Task task = taskService.buildTaskEntity(
                     sceneChannelVo.getSceneId(),
                     sceneChannelVo.getChannelId(),
                     JSONUtil.toJsonStr(sendMessageBo));
-            //推mq
+            // 推mq
             SceneChannelMQModel sceneChannelMQModel = new SceneChannelMQModel();
             sceneChannelMQModel.setTaskId(task.getId());
             sceneChannelMQModel.setSceneId(sceneChannelVo.getSceneId());

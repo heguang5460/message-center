@@ -24,16 +24,16 @@ public class MessageSendController {
 
     @PostMapping("/send")
     public CommonResult sendMessage(@Valid @RequestBody SendMessageRequest sendMessageRequest){
-        //转换参数
+        // 转换参数
         SendMessageBo sendMessageBo = SendMessageBo.builder()
                 .fromUser(sendMessageRequest.getFromUser())
                 .toUser(sendMessageRequest.getToUser())
                 .sceneCode(sendMessageRequest.getSceneCode())
                 .paramMap(sendMessageRequest.getParamMap())
                 .build();
-        //调用业务
+        // 调用业务
         messageSendBiz.sendMessage(sendMessageBo);
-        //返回
+        // 返回
         return CommonResult.success();
     }
 

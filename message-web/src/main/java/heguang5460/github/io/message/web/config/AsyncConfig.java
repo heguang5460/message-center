@@ -28,13 +28,13 @@ public class AsyncConfig implements AsyncConfigurer {
     @Override
     public Executor getAsyncExecutor() {
         ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
-        // 核心线程数
+        //  核心线程数
         taskExecutor.setCorePoolSize(4);
-        // 最大线程数
+        //  最大线程数
         taskExecutor.setMaxPoolSize(8);
-        // 队列大小
+        //  队列大小
         taskExecutor.setQueueCapacity(256);
-        // 线程名的前缀
+        //  线程名的前缀
         taskExecutor.setThreadNamePrefix("async-thread-");
         taskExecutor.initialize();
         return taskExecutor;
@@ -47,7 +47,7 @@ public class AsyncConfig implements AsyncConfigurer {
      */
     @Override
     public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
-        // 异步执行异常处理，暂时不处理
+        //  异步执行异常处理，暂时不处理
         return (throwable, method, objects) -> log.error("async-thread error, cause by: " + throwable.getMessage());
     }
 

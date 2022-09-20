@@ -36,7 +36,7 @@ public class MQConsumer {
             log.error("MQConsumer.consume消费失败，失败原因Exception={}", e.getMessage());
         }
 
-        //手动提交mq
+        // 手动提交mq
         if (isSuccess) {
             channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
         } else {
