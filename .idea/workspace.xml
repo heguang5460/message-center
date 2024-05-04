@@ -14,21 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f90857b-0f1f-4fff-854a-eb853c3b495b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/service/MessageConfigBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/service/MessageConfigBiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/service/MessageSendBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-biz/src/main/java/heguang5460/github/io/message/biz/service/MessageSendBiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-common/src/main/java/heguang5460/github/io/message/common/enums/MQExchangeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-common/src/main/java/heguang5460/github/io/message/common/enums/MQExchangeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/authorization/AuthorizationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/authorization/AuthorizationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/component/gateway/AbstractSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/component/gateway/AbstractSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/handler/MessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/handler/MessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/model/MessageModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/model/MessageModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/mq/consumer/MQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-core/src/main/java/heguang5460/github/io/message/core/mq/consumer/MQConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/util/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-dao/src/main/java/heguang5460/github/io/message/dao/util/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/aop/WebLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/aop/WebLogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/config/AsyncConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/config/AsyncConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/config/GlobalCorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/config/GlobalCorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/controller/MessageConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/controller/MessageConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/controller/MessageSendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/controller/MessageSendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/filter/AuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-web/src/main/java/heguang5460/github/io/message/web/filter/AuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,20 +49,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1621478913" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="test" />
-                    <option name="lastUsedInstant" value="1621478852" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1621478814" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="sim" />
-                    <option name="lastUsedInstant" value="1621478734" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1664639057" />
                   </RecentBranch>
                 </list>
               </option>
@@ -87,7 +62,6 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../Java/jdk1.8.0_151/src.zip!/java/util/HashSet.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../localRepository/org/springframework/boot/spring-boot-autoconfigure/2.2.0.RELEASE/spring-boot-autoconfigure-2.2.0.RELEASE.jar!/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfiguration.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$PROJECT_DIR$/../../localRepository/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE.jar!/org/springframework/beans/factory/BeanFactory.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$PROJECT_DIR$/../../localRepository/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE.jar!/org/springframework/beans/factory/FactoryBean.class" root0="FORCE_HIGHLIGHTING" />
@@ -102,12 +76,17 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\apache-maven-3.9.6" />
         <option name="localRepository" value="D:\localRepository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.8.6" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.8.6\conf\settings.xml" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.9.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="1pIWvd53fZ6aKENqDp4HxeV14hD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -123,10 +102,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/project/mall",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/project/nicetuan-appllo-client",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "79048749a26a3b17a4683ef6fdab53a2",
+    "vue.rearranger.settings.migration": "true",
     "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.shared.autoFetch"
   }
 }]]></component>
@@ -168,10 +157,15 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SpringBootOptions">
-    <option name="showAdditionalConfigNotification" value="false" />
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\heguang\AppData\Roaming\Subversion</configuration>
   </component>
@@ -248,6 +242,9 @@
       <workItem from="1663551187243" duration="546000" />
       <workItem from="1663656118339" duration="31000" />
       <workItem from="1663657681929" duration="326000" />
+      <workItem from="1665997310153" duration="65000" />
+      <workItem from="1713144569957" duration="679000" />
+      <workItem from="1714093597335" duration="332000" />
     </task>
     <servers />
   </component>

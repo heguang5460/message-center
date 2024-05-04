@@ -6,15 +6,15 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
-    url: jdbc:p6spy:mysql://localhost:3306/message?serverTimezone=Asia/Shanghai
+    url: jdbc:p6spy:mysql://192.168.211.128:3306/message?serverTimezone=Asia/Shanghai
     username: root
-    password: 123456
+    password: root
   #rabbitmq 配置
   rabbitmq:
-    host: 192.168.33.129
+    host: 192.168.211.128
     port: 5672
-    username: guest
-    password: guest
+    username: root
+    password: admin
     virtual-host: message
     publisherReturns: true
     publisher-confirm-type: correlated

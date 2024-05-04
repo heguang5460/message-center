@@ -27,9 +27,6 @@ public class AuthorizationManager {
         String md5 = DigestUtil.md5Hex(bodyJson);
         // SHA1
         String serverSignature = DigestUtil.sha1Hex(md5);
-        if (clientSignature.equals(serverSignature)) {
-            return true;
-        }
-        return false;
+        return clientSignature.equals(serverSignature);
     }
 }
